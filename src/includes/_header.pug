@@ -1,0 +1,100 @@
+include _mixins
+block header
+
+    header#header.header
+
+        .header__top
+
+            .container
+
+                .header__top-inner
+
+                    .header__logo
+                        img(src="assets/images/logo.png", alt="logo")
+
+                    .header__cities
+                        p Москва
+
+                    .header__phone
+                        a(href="tel:+7 495 777 0000") +7 495 777 0000
+
+                    .header__search
+                        form
+                            input(type="text" placeholder="Поиск")
+                            button(type="submit")
+                                i.far.fa-magnifying-glass
+
+                    .header__action
+                        a.header-button.header-button-profile(href="#")
+                            i.fal.fa-user
+                        a.header-button.header-button-cart(href="#" data-stock="1")
+                            i.fal.fa-cart-shopping
+                        a.header-button.header-button-favorite(href="#" data-stock="1")
+                            +sprite('heart')
+
+                    .header__burger
+                        i.fal.fa-bars
+
+        .header__nav
+
+            .container
+
+                .header__menu
+                    .close-menu
+                        i.fal.fa-xmark
+
+                    a.mobile-menu__link(href="tel:+7 495 777 0000")
+                        i.fal.fa-phone
+                        span +7 495 777 0000
+                    a.mobile-menu__link(href="#")
+                        i.fal.fa-user
+                        span Войти в личный кабинет
+                    a.mobile-menu__link.mobile-menu-favorite(href="#")
+                        +sprite('heart')
+                        span Избранное
+
+                    nav.navbar
+                        .navbar__link
+                            .navbar__link-submenu
+                                a(href="#") Каталог мебели
+                                .nav-toggle
+                            .nav__submenu
+                                a.nav__submenu-link(href="#") Диван
+                                a.nav__submenu-link(href="#") Комоды
+                                a.nav__submenu-link(href="#") Стеллажи
+                                a.nav__submenu-link(href="#") Комоды
+                                a.nav__submenu-link(href="#") Столы
+                                a.nav__submenu-link(href="#") Кровати
+
+                        .navbar__link
+                            .navbar__link-submenu
+                                a(href="#") Готовые решения
+                                .nav-toggle
+                            .nav__submenu
+                                a.nav__submenu-link(href="#") Комоды
+                                a.nav__submenu-link(href="#") Столы
+                                a.nav__submenu-link(href="#") Кровати
+
+                        .navbar__link
+                            a(href="#") О нас
+
+                        .navbar__link
+                            a(href="#") Новости
+
+                        .navbar__link
+                            a(href="#") Доставка
+
+                        .navbar__link
+                            a(href="#") Оплата
+
+                        .navbar__link
+                            a(href="#") Контакты
+
+                        .navbar__link
+                            a(href="#") Сам себе дизайнер
+
+
+                    .header-search__mobile
+                        form
+                            input(type="text" placeholder="Поиск")
+                            button.button-style.button-style--orange(type="submit") Поиск
