@@ -15,4 +15,18 @@ $(document).ready(function() {
         $(this).parent().parent().find('.nav__submenu').slideToggle()
     })
 
+    // Popup
+    $('.header__cities, .mobile-header__cities').on('click', function() {
+        $('.popup').removeClass('hide')
+        $('.mobile-menu').removeClass('mobile-menu')
+    })
+
+    $('.popup-close').on('click', function() {
+        $('.popup').addClass('hide')
+    })
+
+    $('.geo-search-remove').on('click', function() {
+        $('.geo-search-input input').val('');
+    })
+
 });

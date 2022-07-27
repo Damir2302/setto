@@ -30,6 +30,39 @@ html(lang="ru")
                 include _footer
             // Footer::End
 
+        // Popup
+        .popup.animate__animated.animate__fadeIn.hide
+            .popup-container
+
+                // Выбор города::Start
+                .geo-popup
+                    .geo-popup-container
+                        .geo-window-main.hide
+                            .popup-close
+                            span Ваш город
+                            p Москва
+                            .geo-action-buttons
+                                a.geo-action-btn.geo-action-btn--true(href="#") Да, спасибо
+                                a.geo-action-btn.geo-action-btn--false(href="#") Нет, другой
+
+                        .geo-window-list
+                            .popup-close
+                            p.geo-list-title Выберите город
+                            .geo-search-input
+                                input(type="text" placeholder="Введите название города")
+                                .geo-search-remove
+                            .geo-search-variants
+                                p Например:
+                                a.geo-search-variant(href="#") Казань
+                                a.geo-search-variant(href="#") Тверь
+                                p или
+                                a.geo-search-variant(href="#") Выбрать автоматически
+                            .geo-search-items
+                                a.geo-search-link.selected(href="#") Москва
+                                a.geo-search-link(href="#") Казань
+                                a.geo-search-link(href="#") Тверь
+                // Выбор города::End
+
         // Scripts::Start
         include _loadScripts
         // Scripts::End

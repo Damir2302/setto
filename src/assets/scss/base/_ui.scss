@@ -51,6 +51,10 @@ main {
     }
 }
 
+.hide {
+    display: none!important;
+}
+
 #page {
     position: relative;
     min-width: 320px;
