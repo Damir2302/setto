@@ -5,3 +5,56 @@ title: Setto | Главная
 extends includes/_page
 
 block main
+
+    .main-page
+
+        // Section selection
+        section.section-selection
+
+            .selection
+
+                .selection__block
+                    .selection__bg(style="background-image: url(assets/images/image-13.jpg)")
+                    p.selection__label Подборка мебели
+                    a.selection__link(href="#")
+                        span Перейти в каталог
+
+                .selection__block
+                    .selection__bg(style="background-image: url(assets/images/image-12.jpg)")
+                    p.selection__label Готовые интерьеры
+                    a.selection__link(href="#")
+                        span Перейти в каталог
+
+        // Section solutions
+        section.section-solutions
+
+            .container
+
+                .solutions.swiper
+
+                    .swiper-wrapper
+
+                        .swiper-slide
+                            .solutions__image
+                                img(src="assets/images/image-14.jpg", alt="")
+                            h4.solutions__title Гостиные
+                            a.solutions__link(href="#") Перейти в каталог
+
+                        .swiper-slide
+                            .solutions__image
+                                img(src="assets/images/image-15.jpg", alt="")
+                            h4.solutions__title Спальни
+                            a.solutions__link(href="#") Перейти в каталог
+
+                        .swiper-slide
+                            .solutions__image
+                                img(src="assets/images/image-14.jpg", alt="")
+                            h4.solutions__title Гостиные
+                            a.solutions__link(href="#") Перейти в каталог
+
+                        .swiper-slide
+                            .solutions__image
+                                img(src="assets/images/image-15.jpg", alt="")
+                            h4.solutions__title Спальни
+                            a.solutions__link(href="#") Перейти в каталог
+
