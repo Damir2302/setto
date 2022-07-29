@@ -16,13 +16,13 @@ block main
                 .selection__block
                     .selection__bg(style="background-image: url(assets/images/image-13.jpg)")
                     p.selection__label Подборка мебели
-                    a.selection__link(href="#")
+                    a.selection__link.link-style.link-style--white(href="#")
                         span Перейти в каталог
 
                 .selection__block
                     .selection__bg(style="background-image: url(assets/images/image-12.jpg)")
                     p.selection__label Готовые интерьеры
-                    a.selection__link(href="#")
+                    a.selection__link.link-style.link-style--white(href="#")
                         span Перейти в каталог
 
         // Section solutions
@@ -30,31 +30,157 @@ block main
 
             .container
 
-                .solutions.swiper
+                h2 Готовые решения от дизайнеров Сэтто
 
-                    .swiper-wrapper
+                .solutions
 
-                        .swiper-slide
-                            .solutions__image
-                                img(src="assets/images/image-14.jpg", alt="")
-                            h4.solutions__title Гостиные
-                            a.solutions__link(href="#") Перейти в каталог
+                    .solutions-slider.swiper
 
-                        .swiper-slide
-                            .solutions__image
-                                img(src="assets/images/image-15.jpg", alt="")
-                            h4.solutions__title Спальни
-                            a.solutions__link(href="#") Перейти в каталог
+                        .swiper-wrapper
 
-                        .swiper-slide
-                            .solutions__image
-                                img(src="assets/images/image-14.jpg", alt="")
-                            h4.solutions__title Гостиные
-                            a.solutions__link(href="#") Перейти в каталог
+                            .solutions__slide.swiper-slide
+                                .solutions__image
+                                    img(src="assets/images/image-14.jpg", alt="")
+                                .solutions__info
+                                    h4.solutions__title Гостиные
+                                    a.solutions__link.link-style.link-style--orange(href="#")
+                                        span Перейти в каталог
 
-                        .swiper-slide
-                            .solutions__image
-                                img(src="assets/images/image-15.jpg", alt="")
-                            h4.solutions__title Спальни
-                            a.solutions__link(href="#") Перейти в каталог
+                            .solutions__slide.swiper-slide
+                                .solutions__image
+                                    img(src="assets/images/image-15.jpg", alt="")
+                                .solutions__info
+                                    h4.solutions__title Спальни
+                                    a.solutions__link.link-style.link-style--orange(href="#")
+                                        span Перейти в каталог
 
+                            .solutions__slide.swiper-slide
+                                .solutions__image
+                                    img(src="assets/images/image-14.jpg", alt="")
+                                .solutions__info
+                                    h4.solutions__title Гостиные
+                                    a.solutions__link.link-style.link-style--orange(href="#")
+                                        span Перейти в каталог
+
+                            .solutions__slide.swiper-slide
+                                .solutions__image
+                                    img(src="assets/images/image-15.jpg", alt="")
+                                .solutions__info
+                                    h4.solutions__title Спальни
+                                    a.solutions__link.link-style.link-style--orange(href="#")
+                                        span Перейти в каталог
+
+                    .slider-pagination
+                        button.slider-button-prev
+                            i.fat.fa-circle-arrow-left
+                        button.slider-button-next
+                            i.fat.fa-circle-arrow-right
+
+        // Section catalog
+        section.section-catalog
+
+            .container
+
+                h2 Каталог мебели
+
+                .cat-tab
+
+                    .cat-tab-slider.swiper
+
+                        .swiper-wrapper
+
+                            .swiper-slide
+                                .cat-tab-item.active(data-active="1")
+                                    .cat-tab-icon
+                                        +sprite('star')
+                                    p Популярные
+
+                            .swiper-slide
+                                .cat-tab-item(data-active="2")
+                                    .cat-tab-icon
+                                        +sprite('divany')
+                                    p Диваны
+
+                            .swiper-slide
+                                .cat-tab-item(data-active="3")
+                                    .cat-tab-icon
+                                        +sprite('komody')
+                                    p Комоды
+
+                            .swiper-slide
+                                .cat-tab-item(data-active="4")
+                                    .cat-tab-icon
+                                        +sprite('stellazhi')
+                                    p Стеллажи
+
+                            .swiper-slide
+                                .cat-tab-item(data-active="5")
+                                    .cat-tab-icon
+                                        +sprite('stoly')
+                                    p Столы
+
+                            .swiper-slide
+                                .cat-tab-item(data-active="6")
+                                    .cat-tab-icon
+                                        +sprite('krovaty')
+                                    p Кровати
+
+                            .swiper-slide
+                                .cat-tab-item(data-active="7")
+                                    .cat-tab-icon
+                                        +sprite('akcenty')
+                                    p Акценты
+
+                .cat-body
+
+                    .cat-body-content(data-show="1")
+
+                        .swiper
+
+                            .swiper-wrapper
+
+                                .swiper-slide
+                                    .card-item
+
+                                        span.card-sticker-proposal(style="background-color: #4DC188") New
+                                        span.card-sticker-droplet(style="background-color: #6590C3")
+                                            i.far.fa-droplet
+                                        span.card-sticker-claws(style="background-color: #FF6060")
+                                            i.far.fa-paw-claws
+                                        a.card-favorite(href="#")
+                                            +sprite('heart-orange-stroke')
+
+                                        .card-image
+                                            img(src="assets/images/divan.png", alt="img")
+
+                                        .card-info
+                                            p.card-label Диван в современном стиле
+                                            p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+
+                                            .card-desc
+                                                .card-desc-item
+                                                    p Ширина
+                                                    p 1000 см
+                                                i.fal.fa-xmark
+                                                .card-desc-item
+                                                    p Высота
+                                                    p 1000 см
+                                                i.fal.fa-xmark
+                                                .card-desc-item
+                                                    p Глубина
+                                                    p 1000 см
+
+                                            .card-bottom
+                                                .card-price
+                                                    .card-price-current 10 000 000 ₽
+                                                    .card-price-old 20 000 000 ₽
+
+                                                a.card-btn(href="#")
+                                                    i.far.fa-cart-shopping
+
+                                                .card-quantity.hide
+                                                    button.card-quantity-minus
+                                                        span
+                                                    input(type="number" value="1" readonly)
+                                                    button.card-quantity-plus
+                                                        span

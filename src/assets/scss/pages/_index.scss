@@ -85,36 +85,55 @@
 
 .selection__link {
     margin-top: 12px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 23px;
-    color: #fff;
 
     @include breakpoint(lg) {
         margin-top: 18px;
     }
 }
 
-.selection__link span {
+.solutions {
     position: relative;
 }
 
-.selection__link span::before {
-    content: '';
-    background: #FFFFFF;
-    position: absolute;
-    left: 0;
-    bottom: -7px;
-    display: inline-block;
-    width: 100%;
-    height: 1px;
-    opacity: 0.2;
+.solutions__image {
+    height: calc((100vw - 40px) / 1.564);
+
+    @include breakpoint(md) {
+        height: calc((50vw - 40px) / 1.32);
+    }
+
+    @include breakpoint(lg) {
+        height: calc((50vw - 55px) / 1.82);
+    }
+
+    @include breakpoint(xl) {
+        height: 321px;
+    }
 }
 
-.selection__link span::after {
-    content: '\f178';
-    margin-left: 20px;
-    font-family: $icon;
-    font-weight: 400;
-    font-size: 14px;
+.solutions__info {
+    margin: 20px 0 8px;
+
+    @include breakpoint(lg) {
+        margin: 20px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.solutions__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.solutions__slide {
+    padding-bottom: 4px;
+}
+
+.solutions__link {
+    font-weight: 600;
+    font-size: 16px;
+    color: $orange;
 }
