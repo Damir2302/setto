@@ -1,3 +1,55 @@
+include _mixins
 block footer
 
     footer#footer.footer
+
+        .container
+
+            .footer__main
+
+                .footer__logo
+                    img(src="assets/images/logo.png", alt="logo")
+
+                .footer__cat
+                    a.footer__cat-link(href="#")
+                        +sprite('divany')
+                        span Диваны
+                    a.footer__cat-link(href="#")
+                        +sprite('komody')
+                        span Комоды
+                    a.footer__cat-link(href="#")
+                        +sprite('stellazhi')
+                        span Стеллажи
+                    a.footer__cat-link(href="#")
+                        +sprite('stoly')
+                        span Столы
+                    a.footer__cat-link(href="#")
+                        +sprite('krovaty')
+                        span Кровати
+
+                .footer__menu
+                    a(href="#") Гостинная 20 м2
+                    a(href="#") Гостинная 30 м2
+                    a(href="#") Спальня 14 м2
+                    a(href="#") Спальня 20 м2
+                    a(href="#") Коридор 10 м2
+                    a(href="#") Каталог мебели
+                    a(href="#") Каталог интерьеров
+                    a(href="#") Сам себе дизайнер
+                    a(href="#") О нас
+                    a(href="#") Новости
+                    a(href="#") Доставка
+                    a(href="#") Оплата
+                    a(href="#") Контакты
+
+                .footer__contacts
+                    a(href="tel:+7 495 777 0000") +7 495 777 0000
+                    a(href="mailto:info@setto.ru") info@setto.ru
+
+                .footer__copyright
+                    a(href="#") Политика конфиденциальности
+                    p © Все права защищены
+
+                .footer__dev
+                    span Di-Project.Studio
+                    a(target="_blank" href="https://di-project.studio/") Разработка сайта

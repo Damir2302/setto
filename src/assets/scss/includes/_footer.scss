@@ -1,0 +1,21 @@
+.footer {
+    padding: 30px 20px;
+    background: $blue;
+
+    @include breakpoint(md) {
+        padding: 40px 28px 35px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 56px 40px 26px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 65px 0 42px;
+    }
+}
+
+.footer__logo {
+    width: 132px;
+    height: 42px;
+}

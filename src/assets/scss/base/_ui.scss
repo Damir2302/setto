@@ -544,3 +544,14 @@ button {
 .cat-tab-item.active .cat-tab-icon svg {
     filter: invert(55%) sepia(89%) saturate(927%) hue-rotate(1deg) brightness(105%) contrast(99%);
 }
+
+.cat-link {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    max-width: 180px;
+}
+
+.cat {
+    position: relative;
+}
