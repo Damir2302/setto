@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setto | Главная</title>
+    <!-- Styles::Start-->
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Styles::End-->
+</head>
+
+<body>
+    <div id="page">
+<!-- Header::Start-->
+<header class="header" id="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-inner">
+                <div class="header__logo"><img src="assets/images/logo.png" alt="logo" /></div>
+                <div class="header__cities">Москва</div>
+                <div class="header__phone"><a href="tel:+7 495 777 0000">+7 495 777 0000</a></div>
+                <div class="header__search">
+                    <form>
+                        <input type="text" placeholder="Поиск" />
+                        <button type="submit"><i class="far fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div class="header__action"><a class="header-button header-button-profile" href="javascript:void(0);"><i class="fal fa-user"></i></a><a class="header-button header-button-cart" href="#" data-stock="1"><i class="fal fa-cart-shopping"></i></a><a class="header-button header-button-favorite" href="#" data-stock="1">
+                        <svg>
+                            <use xlink:href="assets/sprites/sprites.svg#heart"></use>
+                        </svg></a></div>
+                <div class="header__burger"><i class="fal fa-bars"></i></div>
+                <!-- Попап "Добавлено в корзину"-->
+                <div class="header-popup animate__animated animate__fadeIn hide">
+                    <div class="header-popup-close"></div>
+                    <div class="cart-popup-added">
+                        <div class="cart-popup__img"><img src="assets/images/popup-cart.png" alt="img" /></div>
+                        <div class="cart-popup__block">
+                            <div class="cart-popup__label">Добавлено в корзину</div>
+                            <div class="cart-popup__info">Диван современный красного цвета</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__nav">
+        <div class="container">
+            <div class="header__menu">
+                <div class="header__menu-mobile">
+                    <div class="close-menu"><i class="fal fa-xmark"></i></div>
+                    <div class="mobile-header__cities">Москва</div><a class="mobile-menu__link" href="tel:+7 495 777 0000"><i class="fal fa-phone"></i><span>+7 495 777 0000</span></a><a class="mobile-menu__link" href="#"><i class="fal fa-user"></i><span>Войти в личный кабинет</span></a><a class="mobile-menu__link mobile-menu-favorite" href="#">
+                        <svg>
+                            <use xlink:href="assets/sprites/sprites.svg#heart"></use>
+                        </svg><span>Избранное</span></a>
+                </div>
+                <nav class="navbar">
+                    <div class="navbar__link">
+                        <div class="navbar__link-submenu"><a href="#">Каталог мебели</a>
+                            <div class="nav-toggle"></div>
+                        </div>
+                        <div class="nav__submenu animate__animated animate__fadeIn animate__faster"><a class="nav__submenu-link" href="#">
+                                <svg>
+                                    <use xlink:href="assets/sprites/sprites.svg#divany"></use>
+                                </svg><span>Диваны</span></a><a class="nav__submenu-link" href="#">
+                                <svg>
+                                    <use xlink:href="assets/sprites/sprites.svg#komody"></use>
+                                </svg><span>Комоды</span></a><a class="nav__submenu-link" href="#">
+                                <svg>
+                                    <use xlink:href="assets/sprites/sprites.svg#stellazhi"></use>
+                                </svg><span>Стеллажи</span></a><a class="nav__submenu-link" href="#">
+                                <svg>
+                                    <use xlink:href="assets/sprites/sprites.svg#stoly"></use>
+                                </svg><span>Столы</span></a><a class="nav__submenu-link" href="#">
+                                <svg>
+                                    <use xlink:href="assets/sprites/sprites.svg#krovaty"></use>
+                                </svg><span>Кровати</span></a></div>
+                    </div>
+                    <div class="navbar__link">
+                        <div class="navbar__link-submenu animate__animated animate__fadeIn animate__faster"><a href="#">Готовые решения</a>
+                            <div class="nav-toggle"></div>
+                        </div>
+                        <div class="nav__submenu"><a class="nav__submenu-link" href="#">Комоды</a><a class="nav__submenu-link" href="#">Столы</a><a class="nav__submenu-link" href="#">Кровати</a></div>
+                    </div>
+                    <div class="navbar__link"><a href="#">О нас</a></div>
+                    <div class="navbar__link"><a href="#">Новости</a></div>
+                    <div class="navbar__link"><a href="#">Доставка</a></div>
+                    <div class="navbar__link"><a href="#">Оплата</a></div>
+                    <div class="navbar__link"><a href="#">Контакты</a></div>
+                    <div class="navbar__link"><a href="#">Сам себе дизайнер</a></div>
+                </nav>
+                <div class="header-search__mobile">
+                    <form>
+                        <input type="text" placeholder="Поиск" />
+                        <button class="button-style button-style--orange" type="submit">Поиск</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header::End-->

@@ -114,11 +114,10 @@
     bottom: 40px;
     display: none;
     width: 254px;
-    height: 136px;
     font-size: 14px;
 
     @include breakpoint(md) {
-        background: url(../images/info.svg) no-repeat;
+        background: url('../images/info.svg') no-repeat;
         left: 28px;
     }
 }
@@ -178,4 +177,53 @@
 .level-info + .item-info i {
     top: -28px;
     right: -28px;
+}
+
+.level-info + .item-info .item-info-description {
+    left: -130px;
+    bottom: 60px;
+}
+
+.product__colors {
+    margin-top: 35px;
+    display: flex;
+}
+
+.color-item {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.color-item.active::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+}
+
+.color-item ~ .color-item {
+    margin-left: 20px;
+}
+
+.product__action {
+    margin-top: 40px;
+}
+
+.product__action .card-quantity {
+    display: flex;
+}
+
+.product__action .card-favorite {
+    position: static;
+}
+
+.product__buttons {
+    margin-top: 30px;
 }

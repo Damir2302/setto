@@ -134,3 +134,25 @@ block main
                                 .item-info
                                     i.fas.fa-question
                                     .item-info-description Листовой материал, изготавливаемый методом сухого прессования мелкой древесной стружки
+
+                    .product__colors
+                        .color-item.active(style="background-color: #8A353B")
+                        .color-item(style="background-color: #F2CC93")
+                        .color-item(style="background-color: #D9D9D9")
+                        .color-item(style="background-color: #0C2A42")
+                        .color-item(style="background-color: #000000")
+
+                    .product__action
+                        .card-quantity
+                            button.card-quantity-minus
+                                span
+                            input(type="number" value="1" readonly)
+                            button.card-quantity-plus
+                                span
+                        a.card-favorite(href="#")
+                            +sprite('heart-orange-stroke')
+                            p Отложить
+
+                    .product__buttons
+                        button.button-style.button-style--orange В корзину
+                        button.button-style.button-style--blue Купить в 1 клик

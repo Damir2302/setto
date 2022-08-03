@@ -26,6 +26,8 @@ const svgSprite = require('gulp-svg-sprites');
 const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
 
+const htmlImport = require('gulp-html-import');
+
 
 const realFavicon = require ('gulp-real-favicon');
 const fs = require('fs');
@@ -100,6 +102,7 @@ function pughtml(cb) {
 
 function html(cb) {
     return src(path.src.html, {base: srcPath})
+        .pipe(htmlImport('./src/includes/'))
         .pipe(dest(path.build.html))
         .pipe(browserSync.reload({stream: true}));
 
