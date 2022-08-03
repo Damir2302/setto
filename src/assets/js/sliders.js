@@ -79,4 +79,39 @@ $(document).ready(function() {
       }
   })
 
+    /////////////////////////////////////////////////////////////////////
+    // КАРТОЧКА ТОВАРА
+    ////////////////////////////////////////////////////////////////////
+    let item_cart_pagination;
+
+    item_cart_pagination = new Swiper('.product__slider-pagination', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        watchSlidesProgress: true,
+        direction: 'horizontal',
+
+        breakpoints: {
+            768: {
+                direction: 'vertical'
+            }
+        }
+    });
+
+    let item_cart;
+
+    item_cart = new Swiper('.product__slider', {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        thumbs: {
+          swiper: item_cart_pagination,
+        },
+
+        navigation: {
+          nextEl: '.product__item .slider-button-next',
+          prevEl: '.product__item .slider-button-prev',
+        }
+    });
+
 })

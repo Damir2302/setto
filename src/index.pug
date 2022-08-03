@@ -148,8 +148,12 @@ block main
                                                 i.far.fa-droplet
                                             span.card-sticker-claws-rep
                                                 i.far.fa-paw-claws
-                                            a.card-favorite-added(href="#")
+                                            // Добавлено в избранное
+                                            a.card-favorite(href="#")
                                                 +sprite('heart-orange-fill')
+                                            // Добавить в избранное
+                                            a.card-favorite(href="#")
+                                                +sprite('heart-orange-stroke')
 
                                             .card-image
                                                 img(src="assets/images/divan.png", alt="img")
@@ -176,12 +180,18 @@ block main
                                                         .card-price-current 10 000 000 ₽
                                                         .card-price-old 20 000 000 ₽
 
-                                                    .card-quantity
-                                                        button.card-quantity-minus
-                                                            span
-                                                        input(type="number" value="1" readonly)
-                                                        button.card-quantity-plus
-                                                            span
+                                                    .card-shop.added
+                                                        // Добавить в корзину
+                                                        a.card-btn(href="#")
+                                                            i.far.fa-cart-shopping
+
+                                                        // Добавлено в корзину
+                                                        .card-quantity
+                                                            button.card-quantity-minus
+                                                                span
+                                                            input(type="number" value="1" readonly)
+                                                            button.card-quantity-plus
+                                                                span
 
                                     .swiper-slide
                                         .card-item

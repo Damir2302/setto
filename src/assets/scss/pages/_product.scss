@@ -1,0 +1,181 @@
+.product {
+    margin-top: 30px;
+
+    @include breakpoint(md) {
+        margin-top: 40px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 50px;
+    }
+}
+
+.product__image {
+    background: #F2F0F0;
+    position: relative;
+    height: calc(100vw - 40px);
+}
+
+.product__slider-pagination {
+    display: none;
+}
+
+.product__block {
+    padding: 86px 38px;
+}
+
+.product__block img {
+    object-fit: contain;
+}
+
+.product__item .slider-pagination {
+    margin-top: 20px;
+}
+
+.product__desc {
+    margin-top: 30px;
+}
+
+.product__desc h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.product__price {
+    margin-top: 20px;
+}
+
+.product__price .current-price {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.product__price .old-price {
+    color: $gray3;
+    text-decoration: line-through;
+}
+
+.product__desc-text {
+    margin-top: 20px;
+}
+
+.product__info {
+    margin-top: 20px;
+    font-family: 'rawline', sans-serif;
+}
+
+.product__info .info-row {
+    margin-bottom: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.product__info .info-row:last-child {
+    margin-top: 28px;
+}
+
+.info-row-item {
+    position: relative;
+}
+
+.product__info .info-row-item:first-child {
+    margin-right: 8px;
+    font-weight: 600;
+    line-height: 19px;
+    color: $gray3;
+}
+
+.item-info i {
+    background: $blue;
+    position: absolute;
+    top: -10px;
+    right: -16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    font-family: $fa5;
+    font-size: 10px;
+    line-height: 10px;
+    color: #fff;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.item-info-description {
+    padding: 20px 20px 32px;
+    background: #F2F0F0;
+    position: absolute;
+    left: -50px;
+    bottom: 40px;
+    display: none;
+    width: 254px;
+    height: 136px;
+    font-size: 14px;
+
+    @include breakpoint(md) {
+        background: url(../images/info.svg) no-repeat;
+        left: 28px;
+    }
+}
+
+.item-info i:hover + .item-info-description {
+    display: block;
+}
+
+.level-info {
+    position: relative;
+}
+
+.level-value {
+    position: absolute;
+    top: -22px;
+    font-size: 17px;
+    line-height: 17px;
+    color: $orange;
+}
+
+.level-info[data-level="0"] .level-value {
+    left: -7px;
+}
+
+.level-info[data-level="1"] .level-value {
+    left: 16px;
+}
+
+.level-info[data-level="2"] .level-value {
+    left: 41px;
+}
+
+.level-info[data-level="3"] .level-value {
+    left: 64px;
+}
+
+.level-info svg {
+    fill: #000;
+}
+
+.level-info[data-level="0"] .level-0 {
+    fill: $orange;
+}
+
+.level-info[data-level="1"] .level-1 {
+    fill: $orange;
+}
+
+.level-info[data-level="2"] .level-2 {
+    fill: $orange;
+}
+
+.level-info[data-level="3"] .level-3 {
+    fill: $orange;
+}
+
+.level-info + .item-info i {
+    top: -28px;
+    right: -28px;
+}

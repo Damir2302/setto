@@ -1,5 +1,9 @@
 .breadcrumbs {
-    padding-top: 16px;
+
+    @include breakpoint(md) {
+        padding-top: 10px;
+        border-top: 1px solid #F2F0F0;
+    }
 }
 
 .breadcrumbs-wrapper {
@@ -13,9 +17,7 @@
 
 .breadcrumbs-item {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #686461;
+    color: $gray3;
 
     @include breakpointMax(xl) {
         max-width: 360px;
@@ -28,13 +30,27 @@
 }
 
 .breadcrumbs-separator::after {
-    content: "\f054";
-    margin: 0 6px;
+    content: "";
+    margin: 0 15px;
+    background: $orange;
     display: block;
-    width: 12px;
-    font-family: $icon;
-    font-size: 12px;
-    line-height: 19px;
-    color: #686461;
-    text-align: center;
+    width: 13px;
+    height: 1px;
+}
+
+.page-title {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+
+    @include breakpoint(lg) {
+        margin-top: 40px;
+        font-size: 35px;
+        line-height: 41px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 50px;
+    }
 }

@@ -156,6 +156,7 @@ button {
     color: #fff;
     text-align: center;
     transition: all .3s ease;
+    cursor: pointer;
 
     @include breakpoint(lg) {
         padding: 15px 60px;

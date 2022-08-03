@@ -1,0 +1,136 @@
+---
+title: Setto | Диван в современном стиле
+---
+
+extends includes/_page
+
+block main
+
+    // Breadcrumbs::Start
+    include components/_breadcrumbs
+    +breadcrumbs('', 'Каталог мебели', 'Диваны', 'Диван в современном стиле')
+    // Breadcrumbs::End
+
+    .product-page
+
+        .container
+
+            .product
+
+                .product__item
+
+                    .product__image
+                        span.card-sticker-proposal(style="background-color: #E9462F") -50%
+                        span.card-sticker-water-rep
+                            i.far.fa-droplet
+                        span.card-sticker-claws-rep
+                            i.far.fa-paw-claws
+
+                        .product__slider.swiper
+
+                            .product__container.swiper-wrapper
+
+                                .swiper-slide
+                                    .product__block
+                                        img(src="assets/images/divan.png", alt="img")
+
+                                .swiper-slide
+                                    .product__block
+                                        img(src="assets/images/divan.png", alt="img")
+
+                                .swiper-slide
+                                    .product__block
+                                        img(src="assets/images/divan.png", alt="img")
+
+                                .swiper-slide
+                                    .product__block
+                                        img(src="assets/images/divan.png", alt="img")
+
+                                .swiper-slide
+                                    .product__block
+                                        img(src="assets/images/divan.png", alt="img")
+
+
+                        .product__slider-pagination.swiper
+
+                            .product__container.swiper-wrapper
+
+                                .swiper-slide
+                                    .product__block
+                                        img(src="assets/images/divan.png", alt="img")
+
+                                .swiper-slide
+                                    .product__block
+                                        img(src="assets/images/divan.png", alt="img")
+
+                                .swiper-slide
+                                    .product__block
+                                        img(src="assets/images/divan.png", alt="img")
+
+                                .swiper-slide
+                                    .product__block
+                                        img(src="assets/images/divan.png", alt="img")
+
+                                .swiper-slide
+                                    .product__block
+                                        img(src="assets/images/divan.png", alt="img")
+
+                    .slider-pagination
+                        button.slider-button-prev
+                            i.fat.fa-circle-arrow-left
+                        button.slider-button-next
+                            i.fat.fa-circle-arrow-right
+
+                .product__desc
+
+                    h4 Диван в современном стиле
+
+                    .product__price
+                        .current-price 10 000 000 ₽
+                        .old-price 20 000 000 ₽
+
+                    .product__desc-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui ullamcorper viverra tortor, lectus Dui ullamcorper viverra tortor, lectus ...
+
+                    .product__info
+                        .info-row
+                            .info-row-item Цвет:
+                            .info-row-item Красный
+                        .info-row
+                            .info-row-item Размер:
+                            .info-row-item 120х80х56
+                        .info-row
+                            .info-row-item Обивка:
+                            .info-row-item Бархат
+                        .info-row
+                            .info-row-item Материал:
+                            .info-row-item МДФ
+                                .item-info
+                                    i.fas.fa-question
+                                    .item-info-description Листовой материал, изготавливаемый методом сухого прессования мелкой древесной стружки
+                        .info-row
+                            .info-row-item Механизм:
+                            .info-row-item Дельфин
+                        .info-row
+                            .info-row-item Сложность сборки:
+                            // 4 уровня сложности (0-3), значение записываем в data-level
+                            .info-row-item
+                                .level-info(data-level="1")
+                                    .level-value
+                                        i.fal.fa-screwdriver-wrench
+                                    svg(width="74" height="15" viewBox="0 0 74 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        rect.level-3.level-2.level-1.level-0(width="2" height="15")
+                                        rect.level-3.level-2.level-1(x="6" y="7" width="2" height="8")
+                                        rect.level-3.level-2.level-1(x="12" y="7" width="2" height="8")
+                                        rect.level-3.level-2.level-1(x="18" y="7" width="2" height="8")
+                                        rect.level-3.level-2.level-1(x="24" width="2" height="15")
+                                        rect.level-3.level-2(x="30" y="7" width="2" height="8")
+                                        rect.level-3.level-2(x="36" y="7" width="2" height="8")
+                                        rect.level-3.level-2(x="42" y="7" width="2" height="8")
+                                        rect.level-3.level-2(x="48" width="2" height="15")
+                                        rect.level-3(x="54" y="7" width="2" height="8")
+                                        rect.level-3(x="60" y="7" width="2" height="8")
+                                        rect.level-3(x="66" y="7" width="2" height="8")
+                                        rect.level-3(x="72" width="2" height="15")
+                                .item-info
+                                    i.fas.fa-question
+                                    .item-info-description Листовой материал, изготавливаемый методом сухого прессования мелкой древесной стружки

@@ -1,3 +1,37 @@
+header.header-fixed {
+    background: #fff;
+    position: fixed;
+    top: -72px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.5s ease;
+
+    @include breakpoint(md) {
+        top: -100px;
+    }
+
+    @include breakpoint(xl) {
+        top: -161px;
+    }
+}
+
+header.header-fixed + main {
+    margin-top: 72px;
+
+    @include breakpoint(md) {
+        margin-top: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 161px;
+    }
+}
+
+header.header-backscroll {
+    top: 0px;
+}
+
 .header__top {
     padding: 20px 0;
     background: $blue;

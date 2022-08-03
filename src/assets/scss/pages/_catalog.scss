@@ -1,0 +1,445 @@
+.catalog-page {
+    margin-top: 30px;
+
+    @include breakpoint(lg) {
+        margin-top: 5px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 25px;
+    }
+}
+
+.catalog__wrapper {
+
+    @include breakpoint(lg) {
+        display: flex;
+    }
+}
+
+// FILTER ASIDE::Start
+.filter-btn {
+    padding: 11px 22px;
+    background: none;
+    width: 100%;
+    max-width: 122px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $gray1;
+    border: 1px solid #E0E0E0;
+
+    @include breakpoint(lg) {
+        display: none;
+    }
+}
+
+.catalog__filter {
+
+    @include breakpoint(lg) {
+        margin-top: 55px;
+        margin-right: 30px;
+        min-width: 295px;
+        width: calc(((100% / 12) * 4) - 18px);
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 34px;
+        margin-right: 40px;
+        min-width: 373px;
+        max-width: 373px;
+    }
+}
+
+.filter {
+
+    @include breakpointMax(lg) {
+        padding: 20px 20px 40px;
+        background: #FFFFFF;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        color: black;
+        overflow-y: scroll;
+        z-index: 9;
+        transition: left 0.5s ease;
+    }
+}
+
+.filter.opened {
+    left: 0;
+}
+
+.filter-close::after {
+
+    @include breakpointMax(lg) {
+        content: '\e59b';
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        width: 18px;
+        height: 28px;
+        font-family: $icon;
+        font-weight: 500;
+        font-size: 18px;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+.filter__row {
+    margin-top: 30px;
+    cursor: pointer;
+
+    @include breakpoint(lg) {
+        margin-top: 40px;
+    }
+}
+
+.filter__row:first-child {
+    margin-top: 20px;
+
+    @include breakpoint(lg) {
+        margin-top: 0;
+    }
+}
+
+.filter__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.filter__label span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.filter__label span::before {
+    content: '';
+    background: $orange;
+    position: absolute;
+    left: 11px;
+    display: inline-block;
+    width: 2px;
+    height: 14px;
+    transition: all 0.5s ease;
+}
+
+.filter__label span::after {
+    content: '';
+    background: $orange;
+    display: inline-block;
+    width: 14px;
+    height: 2px;
+}
+
+.filter__label.active span::before {
+    transform: rotate(90deg);
+}
+
+.filter__item {
+    margin-top: 20px;
+}
+
+.filter__input {
+    display: flex;
+    align-items: center;
+}
+
+.filter__input input {
+    padding: 13px 10px;
+    height: 50px;
+    font-family: 'rawline', sans-serif;
+    font-style: italic;
+    color: $gray3;
+    border: 1px solid #E7E7E7;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.filter__input span {
+    margin: 0 7px;
+    background: #E7E7E7;
+    height: 1px;
+    min-width: 30px;
+    max-width: 30px;
+}
+
+.filter__checkbox .input-style-checkbox ~ .input-style-checkbox {
+    margin-top: 5px;
+}
+
+.filter__checkbox .input-style-checkbox label::before {
+
+    @include breakpoint(md) {
+        margin-top: 3px;
+    }
+}
+
+.filter__bottom {
+    margin-top: 40px;
+    text-align: center;
+
+    @include breakpoint(lg) {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.filter__bottom input {
+    padding: 15px 0;
+    width: 100%;
+    max-width: 300px;
+    line-height: 19px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    @include breakpoint(lg) {
+        padding: 15px 53px;
+        width: auto;
+        max-width: unset;
+    }
+}
+
+.button-clear {
+    margin: 20px auto 0;
+    padding: 0 0 7px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 102px;
+
+    @include breakpoint(lg) {
+        margin: 20px 0 0 auto;
+        justify-content: space-between;
+    }
+}
+
+.button-clear input {
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 141.4%;
+    color: $gray3;
+    text-align: left;
+}
+
+.button-clear::before {
+    content: '';
+    background: $gray3;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    opacity: 0.2;
+}
+
+.button-clear::after {
+    content: '\f00d';
+    font-family: $icon;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: $gray3;
+}
+
+// FILTER ASIDE::End
+
+.catalog__inner {
+    position: relative;
+}
+
+.filter-top {
+    margin-top: 20px;
+    max-width: 280px;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        width: calc(50% - 10px);
+        max-width: unset;
+    }
+
+    @include breakpoint(lg) {
+        margin-left: auto;
+        position: static;
+        width: calc(50% - 15px);
+    }
+
+    @include breakpoint(xl) {
+        width: 100%;
+    }
+}
+
+.top-select {
+    padding-bottom: 5px;
+    position: relative;
+    border-bottom: 1px solid $gray5;
+    cursor: pointer;
+
+    @include breakpoint(xl) {
+        padding-bottom: 0;
+        border: none;
+    }
+}
+
+.selected-option {
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $gray1;
+
+    @include breakpoint(xl) {
+        display: none;
+    }
+}
+
+.selected-option::after {
+    content: '\f078';
+    font-family: $icon;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray2;
+    transition: all 0.5s ease;
+}
+
+.top-select.active .selected-option::after {
+    transform: rotate(180deg);
+}
+
+.select {
+    display: none;
+
+    @include breakpoint(md) {
+        padding: 0 10px;
+        background: #fff;
+        position: absolute;
+        top: calc(100% + 1px);
+        left: -10px;
+        width: calc(100% + 10px);
+        z-index: 1;
+    }
+
+    @include breakpoint(xl) {
+        padding: 0;
+        background: none;
+        top: calc(100% + 5px);
+        left: 0;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
+
+.select-option {
+    padding: 5px 0;
+
+    @include breakpoint(xl) {
+        padding: 0 0 10px;
+        color: $gray3;
+    }
+}
+
+.select-option ~ .select-option {
+
+    @include breakpoint(xl) {
+        margin-left: 20px;
+    }
+}
+
+.select-option.selected {
+
+    @include breakpoint(xl) {
+        font-weight: 600;
+        color: $gray1;
+    }
+}
+
+.catalog__container {
+
+    @include breakpoint(md) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.catalog__container .card-wrapper {
+    margin-top: 20px;
+
+    @include breakpoint(md) {
+        width: calc(50% - 10px);
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 30px;
+        width: calc(50% - 15px);
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 40px;
+        width: calc(50% - 20px);
+    }
+}
+
+.catalog__bottom {
+    text-align: center;
+
+    @include breakpoint(md) {
+        margin-top: 40px;
+    }
+}
+
+.catalog__bottom .pagination {
+
+    @include breakpointMax(md) {
+        display: none;
+    }
+}
+
+.catalog__bottom .button-style {
+    margin: 30px auto 0;
+    max-width: 280px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    @include breakpoint(md) {
+        margin: 20px 0 0;
+        max-width: 175px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 30px 0 0;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 0;
+    }
+}
+
+.catalog__bottom .button-style {
+
+    @include breakpoint(md) {
+        display: none;
+    }
+}
