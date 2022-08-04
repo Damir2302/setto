@@ -49,7 +49,7 @@
         "IE 10"
     ],
     "dependencies": {
-        "gulp-html-import": "0.0.2",
+        "gulp-html-import": "^0.0.2",
         "jscrollpane": "^2.2.3-rc.2"
     }
 }
