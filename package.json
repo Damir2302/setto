@@ -41,7 +41,8 @@
         "node-sass": "^7.0.1",
         "swiper": "^8.3.0",
         "webpack": "^5.4.0",
-        "webpack-stream": "^6.1.0"
+        "webpack-stream": "^6.1.0",
+        "gulp-html-import": "^0.0.2"
     },
     "browserslist": [
         "last 1 version",
@@ -49,7 +50,6 @@
         "IE 10"
     ],
     "dependencies": {
-        "gulp-html-import": "^0.0.2",
         "jscrollpane": "^2.2.3-rc.2"
     }
 }

@@ -102,7 +102,7 @@ function pughtml(cb) {
 
 function html(cb) {
     return src(path.src.html, {base: srcPath})
-        // .pipe(htmlImport('./src/includes/'))
+        .pipe(htmlImport('./src/includes/'))
         .pipe(dest(path.build.html))
         .pipe(browserSync.reload({stream: true}));
 
