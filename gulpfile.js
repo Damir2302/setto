@@ -132,6 +132,7 @@ function scss(cb) {
         .pipe(dest(path.build.css))
         .pipe(cssnano({
             zindex: false,
+            autoprefixer: false,
             discardComments: {
                 removeAll: true
             }
