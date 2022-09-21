@@ -89,7 +89,6 @@ main {
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
-    max-width: 1280px;
     box-sizing: border-box;
 
     @include breakpoint(lg) {
@@ -119,4 +118,45 @@ textarea {
     border: none;
     outline: none;
     box-sizing: content-box;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 140%;
+    color: $black;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        font-size: 45px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 60px;
+    }
+}
+
+.button-style {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 36px;
+}
+
+.button-style--red {
+    background: $red;
+}
+
+.button-style--red:hover {
+    background: $darkred;
+}
+
+.button-style--blue {
+    background: $blue;
+}
+
+.button-style--blue:hover {
+    background: $darkblue;
 }
