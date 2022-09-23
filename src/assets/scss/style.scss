@@ -1,14 +1,22 @@
-$black: #252527;
-$blue: #143A84;
-$darkblue: #0C2555;
-$red: #E6332A;
-$darkred: #B7261F;
+$blue: #0C2A42;
+$ltblue: #6A9DC6;
+$orange: #FDA003;
+$ltorange: #FFBD4E;
+
+$gray1: #333333;
+$gray2: #4F4F4F;
+$gray3: #828282;
+$gray4: #BDBDBD;
+$gray5: #E0E0E0;
+$gray6: #F2F2F2;
+
 
 @import 'plugins/swiper-bundle';
 
 @import 'base/mixins';
 @import 'base/normalize';
 @import 'base/fonts';
+@import 'base/raleway';
 @import 'base/reset';
 @import 'base/ui';
 
@@ -16,5 +24,10 @@ $darkred: #B7261F;
 @import 'includes/footer';
 
 @import 'components/breadcrumbs';
+@import 'components/pagination';
+@import 'components/popup';
+@import 'components/card';
 
 @import 'pages/index';
+@import 'pages/catalog';
+@import 'pages/product';

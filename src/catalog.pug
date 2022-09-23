@@ -1,0 +1,442 @@
+---
+title: Setto | Каталог
+---
+
+extends includes/_page
+
+block main
+
+    // Breadcrumbs::Start
+    include components/_breadcrumbs
+    +breadcrumbs('Диваны', 'Каталог мебели', 'Диваны')
+    // Breadcrumbs::End
+
+    .catalog-page
+
+        .container
+
+            .catalog__wrapper
+
+                // Filter::Start
+                .catalog__filter
+
+                    // MOBILE ONLY
+                    button.filter-btn Фильтр
+
+                    .filter
+
+                        .filter-close
+
+                        form
+
+                            .filter__inner
+
+                                .filter__row
+                                    .filter__label.active Цена
+                                        span
+                                    .filter__item
+                                        .filter__input
+                                            input(type="text" placeholder="от")
+                                            span
+                                            input(type="text" placeholder="до")
+
+                                .filter__row
+                                    .filter__label Сэтто
+                                        span
+
+                                .filter__row
+                                    .filter__label.active Тип товара
+                                        span
+                                    .filter__item
+                                        .filter__checkbox
+                                            .input-style-checkbox
+                                                input#stock-1(type="checkbox" checked)
+                                                label(for="stock-1") Диван
+
+                                            .input-style-checkbox
+                                                input#stock-2(type="checkbox")
+                                                label(for="stock-2") Кровать
+
+                                            .input-style-checkbox
+                                                input#stock-3(type="checkbox")
+                                                label(for="stock-3") Стол
+
+                                .filter__row
+                                    .filter__label Цвет
+                                        span
+
+                                .filter__row
+                                    .filter__label Размер
+                                        span
+
+                                .filter__row
+                                    .filter__label Механизм
+                                        span
+
+                                .filter__row
+                                    .filter__label Тип обивки
+                                        span
+
+                                .filter__row
+                                    .filter__label Спальное место
+                                        span
+
+
+                            .filter__bottom
+
+                                input.button-style.button-style--orange(type="button" value="Показать")
+                                .button-clear
+                                    input(type="button" value="Очистить")
+                // Filter::End
+
+                .catalog__inner
+
+                    .filter-top
+
+                        .top-select
+                            p.selected-option По популярности
+                            .select
+                                a.select-option.selected(href="javascript:void(0)") По популярности
+                                a.select-option(href="javascript:void(0)") По скидке
+                                a.select-option(href="javascript:void(0)") Цене (возрастание)
+                                a.select-option(href="javascript:void(0)") Цене (убывание)
+                                a.select-option(href="javascript:void(0)") По новизне
+
+                    .catalog__container
+
+                        .card-wrapper
+                            .card-item
+                                span.card-sticker-proposal(style="background-color: #E9462F") -50%
+                                span.card-sticker-water-rep
+                                    i.far.fa-droplet
+                                span.card-sticker-claws-rep
+                                    i.far.fa-paw-claws
+                                // Добавлено в избранное
+                                a.card-favorite(href="#")
+                                    +sprite('heart-orange-fill')
+                                // Добавить в избранное
+                                a.card-favorite(href="#")
+                                    +sprite('heart-orange-stroke')
+
+                                .card-image
+                                    img(src="assets/images/divan.png", alt="img")
+
+                                .card-info
+                                    p.card-label Диван в современном стиле
+                                    p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+
+                                    .card-desc
+                                        .card-desc-item
+                                            p Ширина
+                                            p 1000 см
+                                        i.fal.fa-xmark
+                                        .card-desc-item
+                                            p Высота
+                                            p 1000 см
+                                        i.fal.fa-xmark
+                                        .card-desc-item
+                                            p Глубина
+                                            p 1000 см
+
+                                    .card-bottom
+                                        .card-price
+                                            .card-price-current 10 000 000 ₽
+                                            .card-price-old 20 000 000 ₽
+
+                                        .card-shop.added
+                                            // Добавить в корзину
+                                            a.card-btn(href="#")
+                                                i.far.fa-cart-shopping
+
+                                            // Добавлено в корзину
+                                            .card-quantity
+                                                button.card-quantity-minus
+                                                    span
+                                                input(type="number" value="1" readonly)
+                                                button.card-quantity-plus
+                                                    span
+
+                        .card-wrapper
+                            .card-item
+                                span.card-sticker-proposal(style="background-color: #E9462F") -50%
+                                span.card-sticker-water-rep
+                                    i.far.fa-droplet
+                                span.card-sticker-claws-rep
+                                    i.far.fa-paw-claws
+                                // Добавлено в избранное
+                                a.card-favorite(href="#")
+                                    +sprite('heart-orange-fill')
+                                // Добавить в избранное
+                                a.card-favorite(href="#")
+                                    +sprite('heart-orange-stroke')
+
+                                .card-image
+                                    img(src="assets/images/divan.png", alt="img")
+
+                                .card-info
+                                    p.card-label Диван в современном стиле
+                                    p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+
+                                    .card-desc
+                                        .card-desc-item
+                                            p Ширина
+                                            p 1000 см
+                                        i.fal.fa-xmark
+                                        .card-desc-item
+                                            p Высота
+                                            p 1000 см
+                                        i.fal.fa-xmark
+                                        .card-desc-item
+                                            p Глубина
+                                            p 1000 см
+
+                                    .card-bottom
+                                        .card-price
+                                            .card-price-current 10 000 000 ₽
+                                            .card-price-old 20 000 000 ₽
+
+                                        .card-shop.added
+                                            // Добавить в корзину
+                                            a.card-btn(href="#")
+                                                i.far.fa-cart-shopping
+
+                                            // Добавлено в корзину
+                                            .card-quantity
+                                                button.card-quantity-minus
+                                                    span
+                                                input(type="number" value="1" readonly)
+                                                button.card-quantity-plus
+                                                    span
+
+                        .card-wrapper
+                            .card-item
+                                span.card-sticker-proposal(style="background-color: #E9462F") -50%
+                                span.card-sticker-water-rep
+                                    i.far.fa-droplet
+                                span.card-sticker-claws-rep
+                                    i.far.fa-paw-claws
+                                // Добавлено в избранное
+                                a.card-favorite(href="#")
+                                    +sprite('heart-orange-fill')
+                                // Добавить в избранное
+                                a.card-favorite(href="#")
+                                    +sprite('heart-orange-stroke')
+
+                                .card-image
+                                    img(src="assets/images/divan.png", alt="img")
+
+                                .card-info
+                                    p.card-label Диван в современном стиле
+                                    p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+
+                                    .card-desc
+                                        .card-desc-item
+                                            p Ширина
+                                            p 1000 см
+                                        i.fal.fa-xmark
+                                        .card-desc-item
+                                            p Высота
+                                            p 1000 см
+                                        i.fal.fa-xmark
+                                        .card-desc-item
+                                            p Глубина
+                                            p 1000 см
+
+                                    .card-bottom
+                                        .card-price
+                                            .card-price-current 10 000 000 ₽
+                                            .card-price-old 20 000 000 ₽
+
+                                        .card-shop.added
+                                            // Добавить в корзину
+                                            a.card-btn(href="#")
+                                                i.far.fa-cart-shopping
+
+                                            // Добавлено в корзину
+                                            .card-quantity
+                                                button.card-quantity-minus
+                                                    span
+                                                input(type="number" value="1" readonly)
+                                                button.card-quantity-plus
+                                                    span
+
+                        .card-wrapper
+                            .card-item
+                                span.card-sticker-proposal(style="background-color: #E9462F") -50%
+                                span.card-sticker-water-rep
+                                    i.far.fa-droplet
+                                span.card-sticker-claws-rep
+                                    i.far.fa-paw-claws
+                                // Добавлено в избранное
+                                a.card-favorite(href="#")
+                                    +sprite('heart-orange-fill')
+                                // Добавить в избранное
+                                a.card-favorite(href="#")
+                                    +sprite('heart-orange-stroke')
+
+                                .card-image
+                                    img(src="assets/images/divan.png", alt="img")
+
+                                .card-info
+                                    p.card-label Диван в современном стиле
+                                    p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+
+                                    .card-desc
+                                        .card-desc-item
+                                            p Ширина
+                                            p 1000 см
+                                        i.fal.fa-xmark
+                                        .card-desc-item
+                                            p Высота
+                                            p 1000 см
+                                        i.fal.fa-xmark
+                                        .card-desc-item
+                                            p Глубина
+                                            p 1000 см
+
+                                    .card-bottom
+                                        .card-price
+                                            .card-price-current 10 000 000 ₽
+                                            .card-price-old 20 000 000 ₽
+
+                                        .card-shop.added
+                                            // Добавить в корзину
+                                            a.card-btn(href="#")
+                                                i.far.fa-cart-shopping
+
+                                            // Добавлено в корзину
+                                            .card-quantity
+                                                button.card-quantity-minus
+                                                    span
+                                                input(type="number" value="1" readonly)
+                                                button.card-quantity-plus
+                                                    span
+
+                        .card-wrapper
+                            .card-item
+                                span.card-sticker-proposal(style="background-color: #E9462F") -50%
+                                span.card-sticker-water-rep
+                                    i.far.fa-droplet
+                                span.card-sticker-claws-rep
+                                    i.far.fa-paw-claws
+                                // Добавлено в избранное
+                                a.card-favorite(href="#")
+                                    +sprite('heart-orange-fill')
+                                // Добавить в избранное
+                                a.card-favorite(href="#")
+                                    +sprite('heart-orange-stroke')
+
+                                .card-image
+                                    img(src="assets/images/divan.png", alt="img")
+
+                                .card-info
+                                    p.card-label Диван в современном стиле
+                                    p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+
+                                    .card-desc
+                                        .card-desc-item
+                                            p Ширина
+                                            p 1000 см
+                                        i.fal.fa-xmark
+                                        .card-desc-item
+                                            p Высота
+                                            p 1000 см
+                                        i.fal.fa-xmark
+                                        .card-desc-item
+                                            p Глубина
+                                            p 1000 см
+
+                                    .card-bottom
+                                        .card-price
+                                            .card-price-current 10 000 000 ₽
+                                            .card-price-old 20 000 000 ₽
+
+                                        .card-shop.added
+                                            // Добавить в корзину
+                                            a.card-btn(href="#")
+                                                i.far.fa-cart-shopping
+
+                                            // Добавлено в корзину
+                                            .card-quantity
+                                                button.card-quantity-minus
+                                                    span
+                                                input(type="number" value="1" readonly)
+                                                button.card-quantity-plus
+                                                    span
+
+                        .card-wrapper
+                            .card-item
+                                span.card-sticker-proposal(style="background-color: #E9462F") -50%
+                                span.card-sticker-water-rep
+                                    i.far.fa-droplet
+                                span.card-sticker-claws-rep
+                                    i.far.fa-paw-claws
+                                // Добавлено в избранное
+                                a.card-favorite(href="#")
+                                    +sprite('heart-orange-fill')
+                                // Добавить в избранное
+                                a.card-favorite(href="#")
+                                    +sprite('heart-orange-stroke')
+
+                                .card-image
+                                    img(src="assets/images/divan.png", alt="img")
+
+                                .card-info
+                                    p.card-label Диван в современном стиле
+                                    p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+
+                                    .card-desc
+                                        .card-desc-item
+                                            p Ширина
+                                            p 1000 см
+                                        i.fal.fa-xmark
+                                        .card-desc-item
+                                            p Высота
+                                            p 1000 см
+                                        i.fal.fa-xmark
+                                        .card-desc-item
+                                            p Глубина
+                                            p 1000 см
+
+                                    .card-bottom
+                                        .card-price
+                                            .card-price-current 10 000 000 ₽
+                                            .card-price-old 20 000 000 ₽
+
+                                        .card-shop.added
+                                            // Добавить в корзину
+                                            a.card-btn(href="#")
+                                                i.far.fa-cart-shopping
+
+                                            // Добавлено в корзину
+                                            .card-quantity
+                                                button.card-quantity-minus
+                                                    span
+                                                input(type="number" value="1" readonly)
+                                                button.card-quantity-plus
+                                                    span
+
+                    .catalog__bottom
+                        // Pagination
+                        .pagination
+
+                            a.pagination-item.pagination-arrow.disabled(href="javascript:void(0)")
+                                i.far.fa-angles-left
+                            a.pagination-item.pagination-arrow.disabled(href="javascript:void(0)")
+                                i.far.fa-angle-left
+
+                            a.pagination-item.active(href="javascript:void(0)") 1
+                            a.pagination-item(href="javascript:void(0)") 2
+                            a.pagination-item(href="javascript:void(0)") 3
+                            a.pagination-item(href="javascript:void(0)") 4
+                            a.pagination-item(href="javascript:void(0)") 5
+                            span.pagination-item.pagination-dots ...
+                            a.pagination-item(href="javascript:void(0)") 10
+
+                            a.pagination-item.pagination-arrow(href="javascript:void(0)")
+                                i.far.fa-angle-right
+                            a.pagination-item.pagination-arrow(href="javascript:void(0)")
+                                i.far.fa-angles-right
+
+                        // LOAD MORE BUTTON
+                        a.button-style.button-style--orange Загрузить ещё

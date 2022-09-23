@@ -17,7 +17,7 @@
 
 .breadcrumbs-item {
     font-weight: 400;
-    color: gray;
+    color: $gray3;
 
     @include breakpointMax(xl) {
         max-width: 360px;
@@ -32,7 +32,7 @@
 .breadcrumbs-separator::after {
     content: "";
     margin: 0 15px;
-    background: orange;
+    background: $orange;
     display: block;
     width: 13px;
     height: 1px;

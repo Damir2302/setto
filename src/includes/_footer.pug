@@ -2,3 +2,66 @@ include _mixins
 block footer
 
     footer#footer.footer
+
+        .container
+
+            .footer__main
+
+                .footer__logo
+                    .footer__logo-img
+                        img(src="assets/images/logo.png", alt="logo")
+
+                .footer__cat
+                    .footer__cat-item
+                        +sprite('divany')
+                        a.footer__cat-link(href="#")
+                            span Диваны
+                    .footer__cat-item
+                        +sprite('komody')
+                        a.footer__cat-link(href="#")
+                            span Комоды
+                    .footer__cat-item
+                        +sprite('stellazhi')
+                        a.footer__cat-link(href="#")
+                            span Стеллажи
+                    .footer__cat-item
+                        +sprite('stoly')
+                        a.footer__cat-link(href="#")
+                            span Столы
+                    .footer__cat-item
+                        +sprite('krovaty')
+                        a.footer__cat-link(href="#")
+                            span Кровати
+
+                .footer__menu
+
+                    .footer__menu-cat
+                        a.footer__menu-link(href="#") Гостинная 20 м2
+                        a.footer__menu-link(href="#") Гостинная 30 м2
+                        a.footer__menu-link(href="#") Спальня 14 м2
+                        a.footer__menu-link(href="#") Спальня 20 м2
+                        a.footer__menu-link(href="#") Коридор 10 м2
+
+                    .footer__menu-main
+                        a.footer__menu-link(href="#") Каталог мебели
+                        a.footer__menu-link(href="#") Готовые решения
+                        a.footer__menu-link(href="#") Сам себе дизайнер
+                        a.footer__menu-link(href="#") О нас
+                        a.footer__menu-link(href="#") Новости
+                        a.footer__menu-link(href="#") Доставка
+                        a.footer__menu-link(href="#") Оплата
+                        a.footer__menu-link(href="#") Контакты
+
+                .footer__contacts
+                    a.footer__phone(href="tel:+7 495 777 0000") +7 495 777 0000
+                    a.footer__mail(href="mailto:info@setto.ru") info@setto.ru
+
+            .footer__bottom
+
+                .footer__copyright
+                    a(href="#") Политика конфиденциальности
+                    p © Все права защищены
+
+                .footer__dev
+                    a(target="_blank" href="https://di-project.studio/") Разработка сайта
+                    span Di-Project.Studio
